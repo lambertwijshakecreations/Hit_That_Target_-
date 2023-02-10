@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hand-Oog Coördinatie</title>
+    <link rel="stylesheet" href="./CSS/styles.css">
+    <script src="./JS/jquery-3.6.0.min.js"></script>
+    <script src="./JS/script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+            <h1>Hit That Target!</h1>
+            <h2>Hoe goed is jouw duim/oog coördinatie?</h2>
+    </header>
+           
+        <div class="spelregels-container hide">
+        <p>
+            Je ziet een balk met een bal. Bij elke balk staat een getal in procenten. 
+            Dit getal moet je proberen te bereiken door gewoon met je duim (of vinger) op de locatie van de balk te tikken.
+        </p>
+        <p>
+            Even voor de duidelijkheid: Links = 0%, Rechts is 100%. 
+            En om niet al te streng te zijn: Je mag er 5% naast zitten!
+        </p>
+        <h2>Veel Plezier!</h2>
+    </div>
+    <h3 id="spelTitle"
+    class="spelregels-titel"
+    data-state="open">Spelregels</h3>
+
+
+        <main>
+
+                <div id="container1" class="container">
+                    <h2>Tik op 50%</h2>
+                    <input id="input1" type="range" value="0">
+                </div>
+   
+            
+            <div id="container2" class="container hide">
+                <h2>Tik op 25%</h2>
+                <input id="input2" type="range" value="0">
+            </div>
+        
+            
+            <div id="container3" class="container hide">
+                <h2>Tik op 75%</h2>
+                <input id="input3" type="range" value="0">
+            </div>
+        
+
+            <div id="container4" class="container hide">
+                <h2>Tik op 30%</h2>
+                <input id="input4" type="range" value="0">
+            </div>
+ 
+
+        
+            <div id="container5" class="container hide">
+                <h2>Tik op 90%</h2>
+                <input id="input5" type="range" value="0">
+            </div>
+
+        
+            <div id="container6" class="container hide">
+                <h2>BONUS! Tik op 62%</h2>
+                <input id="input6" type="range" value="0">
+            </div>
+
+
+        <div class="result-container hide">
+            <h2>De Resultaten</h2>
+            <h3>gok: 1, vraag: 50%, resultaat:</h3>
+            <p id="result1"></p>
+            <h3>gok: 2, vraag: 25%, resultaat:</h3>
+            <p id="result2"></p>
+            <h3>gok: 3, vraag: 75%, resultaat:</h3>
+            <p id="result3"></p>
+            <h3>gok: 4, vraag: 30%, resultaat:</h3>
+            <p id="result4"></p>
+            <h3>gok: 5, vraag: 90%, resultaat:</h3>
+            <p id="result5"></p>
+            <h3>Bonus vraag:62% resultaat:</h3>
+            <p id="result6"></p>
+
+            <a href="index.html">Opnieuw</a>
+        </div>
+        </main>
+
+        <footer>
+            V1.0. This game is made by:
+            <img src="./images/LWCnaamlogo.png" alt="logo">
+        </footer>
+
+
+</body>
+</html>
